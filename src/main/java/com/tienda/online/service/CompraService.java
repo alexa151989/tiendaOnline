@@ -34,6 +34,7 @@ public class CompraService {
 		    detalle.setSubtotal(new BigDecimal(detalle.getCantidad()).multiply(detalle.getArticulo().getPrecio()));
 		});
 		return compraRepository.save(compra);
+		
 	}
 
 	public List<Compra> obtenerTodos() {
